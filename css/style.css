@@ -1,14 +1,63 @@
-body{
-    background-color: rgba(32, 28, 28, 0.63);
+@font-face{
+ font-family: Roboto;
+ src: url(/font/Roboto-Medium.ttf);
+ src: url(/font/Roboto-MediumItalic.ttf);
 }
-.top-strip{
-    border: 3px dashed  red;
-    background-color: #007765;
+
+body {
+    font-family: 'Roboto';
+  background-color: rgba(32, 28, 28, 0.63);
+}
+
+/* верхняя панель с сылками */
+.top-strip {
+  border: 3px dashed red;
+  background-color: #007765;
+}
+
+/* верхняя панель с сылками делитель */
+.border-strip {
+  border-left: 1px solid #ffffff;
+  padding-left: 10px;
+  margin-left: 8px;
+}
+/* блок с текстом problem картинка */
+.img-content {
+  background-image: url("/img/jimage.png");
+  background-size: cover;
+  background-position: center center;
   
 }
 
-.border-strip{
-    border-left: 1px solid #FFFFFF;
-    padding-left: 10px;
-    margin-left: 8px;
+/* блок с текстом problem текст */
+.text-img-content {
+  font-family: Roboto ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* блок с текстом в картинке Hero картинка */
+
+.hero{
+    background-image: url(/img/hero.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* блок с текстом в картинке Hero текст */
+
+.text-hero{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    
+    color: #FFFFFF;
 }
