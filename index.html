@@ -6,100 +6,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendor/css/bootstrap-grid.min.css" />
-    <!-- Optional JavaScript; choose one of the two! -->
-    <script
-      type="text/javascript"
-      src="/vendor/js/bootstrap.bundle.min.js"
-    ></script>
-    <script type="text/javascript" src="vendor/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
-
     <!-- style css -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="vendor/css/normalize.css" />
 
     <title>Home Work</title>
   </head>
 
   <body>
-    <header>
-      <!-- верхняя панель с сылками -->
-      <div>
+    <div class="one-main">
+      <header class="header">
+        <!-- верхняя панель с сылками -->
+
         <div class="top-strip">
-          <a href="#"><img src="/img/logo.png" /></a>
-          <a href="">the problem</a>
-          <a class="border-strip" href="">PiedPiperCoin </a>
-          <a class="border-strip" href="">the team</a>
+          <div class="link-strip-left">
+            <div class="link-strip">
+              <a href="#"><img src="/img/logo.png" /></a>
+            </div>
+          </div>
+          <div class="link-strip-right">
+            <div class="link-strip">
+              <a href="">the problem</a>
+              <a class="border-strip" href="">PiedPiperCoin </a>
+              <a class="border-strip" href="">the team</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!--  блок с текстом в картинкой PiperNet Is Here -->
+
+    <div class="pipernet-container">
+          <div class="img-content">
+            <div class="text-img-content">PiperNet Is Here</div>
+          </div>
+    </div>
+
+        <!--  блок с текстом problem -->
+        <div class="problem">
+          <div class="problem-content">
+            <h1 class="h1-problem">The Problem</h1>
+            <p>
+              Beneath the flashy homepages of your favorite sites lurk Hooli™
+              and other evil corporations out to hoard and sell your most
+              personal data.
+            </p>
+            <p>
+              What was built to be the ultimate platform for the free sharing of
+              knowledge has turned into a money-hungry monster feasting on our
+              privacy and freedom.
+            </p>
+
+            <p>
+              But fear not, for Pied Piper has the answer! And it’s simple: An
+              autonomous peer-to-peer network featuring distributed storage
+              powered by universal compression, accelerated scheduling
+              allocation, and end-to-end encryption.
+            </p>
+
+            <p>
+              Put even simpler — it’s the internet, completely decentralized.
+            </p>
+          </div>
+        </div>
+
+        <!-- блок с текстом в картинке Hero -->
+        
+        <div class="hero-container">
+          <div class="hero">
+            <div class="text-hero">
+              We’re in this together! All of our computers and phones join in a
+              network to make the strongest supercomputer the world has ever seen.
+            </div>
+          </div>
+
+        </div>
+        <!-- block text + image Introducing PiedPiperCoin -->
+        <div class="ppc">
+          <h1>Introducing PiedPiperCoin</h1>
+          <img src="/img/pcc-logo.png" alt="PiedPiperCoin-logo" />
+          <div class="text-ppc">
+            <p>
+              Pied Piper's new internet is built for users, by users. You supply
+              the storage, compute, and networking resources that power our
+              entire decentralized web.
+            </p>
+            <p>
+              Now there's a way to give credit where credit is due. Compute
+              credit, that is! The more you share your device resources, the
+              more PiedPiperCoin you receive.
+            </p>
+            <p>
+              Whether you're a developer with an app ready for market, or just
+              an Average Joe with a smartphone you'll love all you can do with
+              PiedPiperCoin.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- block avatars + name The Team-->
+      <div class="team">
+        <h1>The Team</h1>
+        <div class="team-content">
+          <div class="team-avatars">
+            <img src="/img/richard.png" alt="Richard Hendricks" />
+            <h2>Richard Hendricks</h2>
+            <span class="team-post">Founder & CEO</span>
+          </div>
+
+          <div class="team-avatars">
+            <img src="/img/dinesh.png" alt="Dinesh Chugtai" />
+            <h2>Dinesh Chugtai</h2>
+            <span class="team-post">Senior Programmer</span>
+          </div>
+
+          <div class="team-avatars">
+            <img src="/img/bertram.png" alt="Bertram Gilfoyle" />
+            <h2>Bertram Gilfoyle</h2>
+            <span class="team-post">Chief Systems Architect</span>
+          </div>
+
+          <div class="team-avatars">
+            <img src="/img/jared.png" alt="Jared Dunn" />
+            <h2>Jared Dunn</h2>
+            <span class="team-post">Chief Operating Officer</span>
+          </div>
+
+          <div class="team-avatars">
+            <img src="/img/monica.png" alt="Monica Hall" />
+            <h2>Monica Hall</h2>
+            <span class="team-post">Chief Financial Officer</span>
+          </div>
+
+          <div class="team-avatars">
+            <img src="/img/nelson.png" alt="Nelson Bighetti" />
+            <h2>Nelson Bighetti</h2>
+            <span class="team-post">Majority Investor</span>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <!--  блок с текстом в картинкой PiperNet Is Here -->
-      <div class="img-content">
-        <div class="text-img-content">PiperNet Is Here</div>
-      </div>
-      <!--  блок с текстом problem -->
-      <div class="problem">
-        <h1>The Problem</h1>
-        <p>
-          Beneath the flashy homepages of your favorite sites lurk Hooli™ and
-          other evil corporations out to hoard and sell your most personal data.
-        </p>
-        <p>
-          What was built to be the ultimate platform for the free sharing of
-          knowledge has turned into a money-hungry monster feasting on our
-          privacy and freedom.
-        </p>
 
-        <p>
-          But fear not, for Pied Piper has the answer! And it’s simple: An
-          autonomous peer-to-peer network featuring distributed storage powered
-          by universal compression, accelerated scheduling allocation, and
-          end-to-end encryption.
-        </p>
-
-        <p>Put even simpler — it’s the internet, completely decentralized.</p>
-      </div>
-
-      <!-- блок с текстом в картинке Hero -->
-      <div class="hero">
-        <div class="text-hero">
-          We’re in this together! All of our computers and phones join in a
-          network to make the strongest supercomputer the world has ever seen.
+      <footer>
+        <div class="text-footer">
+          All other trademarks and copyrights are the property of their
+          respective owners. Use of these names, trademarks and brands does not
+          imply endorsement.
         </div>
-      </div>
-
-      <!-- block text + image Introducing PiedPiperCoin -->
-      <div class="ppc">
-        <h1>Introducing PiedPiperCoin</h1>
-        <img src="/img/pcc-logo.png" alt="PiedPiperCoin-logo" />
-        <div class="text-ppc">
-          <p>
-            Pied Piper's new internet is built for users, by users. You supply
-            the storage, compute, and networking resources that power our entire
-            decentralized web.
-          </p>
-          <p>
-            Now there's a way to give credit where credit is due. Compute
-            credit, that is! The more you share your device resources, the more
-            PiedPiperCoin you receive.
-          </p>
-          <p>
-            Whether you're a developer with an app ready for market, or just an
-            Average Joe with a smartphone you'll love all you can do with
-            PiedPiperCoin.
-          </p>
-        </div>
-      </div>
-    </main>
-    <!-- block avatars + name The Team-->
-    <div class="team"></div>
-
-    
-
-    <footer></footer>
+      </footer>
+    </div>
   </body>
 </html>

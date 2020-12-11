@@ -1,63 +1,199 @@
-@font-face{
- font-family: Roboto;
- src: url(/font/Roboto-Medium.ttf);
- src: url(/font/Roboto-MediumItalic.ttf);
+@font-face {
+  font-family: Roboto;
+  src: url(/font/Roboto-Medium.ttf);
+  src: url(/font/Roboto-MediumItalic.ttf);
 }
 
 body {
-    font-family: 'Roboto';
-  background-color: rgba(32, 28, 28, 0.63);
+  font-family: "Roboto";
+  background-color: grey;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+  text-align: center;
+  color: #007765;
+}
+
+.one-main {
+  max-width: 1219px;
+  background-color: #ffffff;
+  
+}
+
+.problem,
+.team {
+  background-color: #eeeeee;
+}
+.header{
+  
+  position: relative;
+  border: dashed 1px yellow ;
+}
 /* верхняя панель с сылками */
 .top-strip {
-  border: 3px dashed red;
+  /* border: 3px dashed red; */
+ 
+ 
+  position: sticky;
+  /* top: -1px; */
+  /* margin: 0; */
   background-color: #007765;
+  display: flex;
+  justify-content: space-between;
+  /* max-height: 85px; */
+  /* width: 100%; */
+ 
+  
 }
 
+.link-strip {
+  /* justify-content: center; */
+  border: dashed rgb(255, 0, 0) 1px;
+  
+}
+.link-strip-left {
+  padding: 20px 0px 20px 55px;
+}
+.link-strip-right {
+  /* align-items: center; */
+  padding: 29px 55px 29px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
 /* верхняя панель с сылками делитель */
 .border-strip {
   border-left: 1px solid #ffffff;
   padding-left: 10px;
   margin-left: 8px;
 }
-/* блок с текстом problem картинка */
+
+/* блок с текстом PiperNet Is Here картинка */
+.pipernet-container{
+  box-sizing: border-box;
+  max-width: 1219px;
+
+}
 .img-content {
   background-image: url("/img/jimage.png");
   background-size: cover;
   background-position: center center;
-  
+  height: 405px;
+}
+.text-img-content {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56x;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 /* блок с текстом problem текст */
-.text-img-content {
-  font-family: Roboto ;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 72px;
-  line-height: 84px;
-  text-align: center;
-  color: #ffffff;
+
+.problem {
+  height: 720px;
+  padding: 16px 55px 90px 55px;
+  box-sizing: border-box;
 }
+.problem-content {
+  /* width: 1110px; если ставить его то, он фиксирует контент  */
+  border: 3px dashed rgb(255, 0, 191);
+}
+.h1-problem {
+  padding-top: 50px;
+}
+
 
 /* блок с текстом в картинке Hero картинка */
 
-.hero{
-    background-image: url(/img/hero.png);
-    background-size: cover;
-    background-position: center center;
+.hero-container{
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+    
 }
 
+.hero {
+  
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: url(/img/hero.png);
+  background-size: cover;
+  background-position: center center;
+}
 
 /* блок с текстом в картинке Hero текст */
 
-.text-hero{
-    font-family: Roboto;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    
-    color: #FFFFFF;
+.text-hero {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* block avatars + name The Team */
+
+.team-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.team-avatars {
+  /* border: dashed rgb(191, 81, 255); */
+  text-align: center;
+  flex-basis: 33%;
+  padding: 20px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.team-post {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  color: #007765;
+}
+
+/* footer  */
+footer {
+  background-color: #333333;
+}
+.text-footer {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
