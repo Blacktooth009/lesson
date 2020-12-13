@@ -5,8 +5,10 @@
 }
 
 body {
+  margin: 0;
   font-family: "Roboto";
   background-color: grey;
+  position: relative;
 }
 
 a {
@@ -34,25 +36,17 @@ h1 {
   background-color: #eeeeee;
 }
 .header{
-  
-  position: relative;
-  border: dashed 1px yellow ;
+  position: -webkit-sticky; 
+  position:sticky; 
+  top: 0;
+ 
+  /* border: dashed 1px yellow ; */
 }
 /* верхняя панель с сылками */
 .top-strip {
-  /* border: 3px dashed red; */
- 
- 
-  position: sticky;
-  /* top: -1px; */
-  /* margin: 0; */
   background-color: #007765;
   display: flex;
   justify-content: space-between;
-  /* max-height: 85px; */
-  /* width: 100%; */
- 
-  
 }
 
 .link-strip {
@@ -110,12 +104,18 @@ h1 {
   padding: 16px 55px 90px 55px;
   box-sizing: border-box;
 }
+
+
 .problem-content {
   /* width: 1110px; если ставить его то, он фиксирует контент  */
-  border: 3px dashed rgb(255, 0, 191);
+  /* border: 3px dashed rgb(255, 0, 191); */
 }
-.h1-problem {
+h1.h1-problem {
   padding-top: 50px;
+  border: solid 2px rgb(47, 85, 255);
+  
+  padding-bottom: 16px;
+
 }
 
 
